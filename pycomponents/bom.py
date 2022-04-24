@@ -1,3 +1,5 @@
+from typing import List
+
 import psutil
 from cyclonedx.model import Tool
 from cyclonedx.model.bom import Bom, Property
@@ -13,10 +15,10 @@ def get_tool() -> Tool:
     return Tool(vendor="pycomponents", name="pycomponents-bom", version=version)
 
 
-def get_process_properties(process: psutil.Process) -> list[Property]:
+def get_process_properties(process: psutil.Process) -> List[Property]:
     cmdline = " ".join(process.cmdline())
 
-    properties: list[Property] = [
+    properties: List[Property] = [
         Property(name="pid", value=str(process.pid)),
         Property(name="exe", value=process.exe()),
         Property(name="cmdline", value=cmdline),
@@ -32,7 +34,7 @@ def get_process_properties(process: psutil.Process) -> list[Property]:
 
 class BOMFactory:
     @staticmethod
-    def from_components(components: list[Component]) -> Bom:
+    def from_components(components: List[Component]) -> Bom:
         bom = Bom(components=components)
 
         tool = get_tool()

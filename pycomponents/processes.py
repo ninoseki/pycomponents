@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 import psutil
 
@@ -24,10 +24,10 @@ def get_process(pid: int) -> Optional[psutil.Process]:
     return None
 
 
-def get_py_processes() -> list[psutil.Process]:
+def get_py_processes() -> List[psutil.Process]:
     pids = psutil.pids()
 
-    processes: list[psutil.Process] = []
+    processes: List[psutil.Process] = []
     for pid in pids:
         process = get_process(pid)
         if process is None:

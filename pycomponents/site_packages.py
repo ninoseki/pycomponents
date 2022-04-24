@@ -1,12 +1,12 @@
 import os
-from typing import Optional
+from typing import List, Optional, Set
 
 import psutil
 
 from .utils import get_command, is_python
 
 
-def get_string_between_quotes(s: str) -> list[str]:
+def get_string_between_quotes(s: str) -> List[str]:
     strings = s.split("'")[1::2]
     return [string for string in strings if string != ""]
 
@@ -33,8 +33,8 @@ def get_python_in_cmdline(process: psutil.Process) -> Optional[str]:
     return None
 
 
-def get_site_packages(process: psutil.Process) -> set[str]:
-    site_packages: set[str] = set()
+def get_site_packages(process: psutil.Process) -> Set[str]:
+    site_packages: Set[str] = set()
     output = None
 
     # Python may be nested like the following

@@ -1,3 +1,5 @@
+from typing import List
+
 import pkg_resources
 from cyclonedx.model import LicenseChoice
 from cyclonedx.model.component import Component, Property
@@ -48,16 +50,16 @@ class ComponentFactory:
 
 class ComponentsFactory:
     @staticmethod
-    def from_site_package(site_package: str) -> list[Component]:
-        components: list[Component] = []
+    def from_site_package(site_package: str) -> List[Component]:
+        components: List[Component] = []
         for dist in pkg_resources.find_distributions(site_package):
             components.append(ComponentFactory.from_dist(dist))
 
         return components
 
     @staticmethod
-    def from_site_packages(site_packages: set[str]) -> list[Component]:
-        components: list[Component] = []
+    def from_site_packages(site_packages: set[str]) -> List[Component]:
+        components: List[Component] = []
         for site_package in site_packages:
             components.extend(ComponentsFactory.from_site_package(site_package))
 
