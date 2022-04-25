@@ -22,6 +22,7 @@ def get_process_properties(process: psutil.Process) -> List[Property]:
         Property(name="pid", value=str(process.pid)),
         Property(name="exe", value=process.exe()),
         Property(name="cmdline", value=cmdline),
+        Property(name="username", value=process.username()),
     ]
 
     try:
