@@ -41,17 +41,18 @@ def get_site_packages(process: psutil.Process) -> Set[str]:
     exe = get_python_in_cmdline(process) or process.exe()
     user = process.username()
 
+    sys_path_command = "import sys;print(sys.path)"
     if am_i_root():
         sudo = get_command("sudo")
         try:
-            c = f"{exe} -m site"
+            c = f'{exe} -c "{sys_path_command}"'
             output = sudo("su", user, "-c", c)
         except Exception:
             return site_packages
     else:
         py = get_command(exe)
         try:
-            output = py("-m", "site")
+            output = py("-c", sys_path_command)
         except Exception:
             return site_packages
 
