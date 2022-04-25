@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Set
 
 import pkg_resources
 from cyclonedx.model import LicenseChoice
@@ -58,7 +58,7 @@ class ComponentsFactory:
         return components
 
     @staticmethod
-    def from_site_packages(site_packages: set[str]) -> List[Component]:
+    def from_site_packages(site_packages: Set[str]) -> List[Component]:
         components: List[Component] = []
         for site_package in site_packages:
             components.extend(ComponentsFactory.from_site_package(site_package))
