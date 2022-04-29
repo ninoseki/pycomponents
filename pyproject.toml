@@ -6,6 +6,9 @@ authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
 packages = [
     { include = "pycomponents" }
 ]
+homepage = "https://github.com/ninoseki/pycomponents"
+repository = "https://github.com/ninoseki/pycomponents"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"

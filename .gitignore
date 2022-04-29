@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # BOM
-pycomponents-*.json
-pycomponents-*.xml
+/pycomponents-*.json
+/pycomponents-*.xml
