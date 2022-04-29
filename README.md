@@ -38,6 +38,10 @@ Options:
   --help                          Show this message and exit.
 ```
 
+## Example
+
+See [example](https://github.com/ninoseki/pycomponents/example/README.md).
+
 ## What is the difference from `cyclonedx-bom`?
 
 [cyclonedx-bom](https://github.com/CycloneDX/cyclonedx-python)'s BOM comes from:
