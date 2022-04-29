@@ -1,4 +1,5 @@
-name = "py-sbom-components"
+project_name = "py-sbom-components"
+name = "pycomponents"
 vendor = "ninoseki"
 
 vcs_url = "https://github.com/ninoseki/pycomponents"
