@@ -1,0 +1,851 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:d4cdd954-afa2-4ed8-8cf5-964d9522e559",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-04-29T04:31:50.366864+00:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-python-lib",
+        "version": "2.3.0",
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
+            "type": "build-system"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md",
+            "type": "release-notes"
+          },
+          {
+            "url": "https://pypi.org/project/cyclonedx-python-lib/",
+            "type": "distribution"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE",
+            "type": "license"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues",
+            "type": "issue-tracker"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib",
+            "type": "vcs"
+          },
+          { "url": "https://cyclonedx.org", "type": "website" },
+          {
+            "url": "https://cyclonedx.github.io/cyclonedx-python-lib/",
+            "type": "documentation"
+          }
+        ]
+      },
+      {
+        "vendor": "ninoseki",
+        "name": "pycomponents",
+        "version": "0.1.1",
+        "externalReferences": [
+          { "url": "https://github.com/ninoseki/pycomponents", "type": "vcs" },
+          {
+            "url": "https://pypi.org/project/py-sbom-components/",
+            "type": "distribution"
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "b920e62e-f515-4519-9ba5-3b370c9aac35",
+      "name": "types-setuptools",
+      "version": "57.4.14",
+      "licenses": [{ "expression": "Apache-2.0 license" }],
+      "purl": "pkg:pypi/types-setuptools@57.4.14",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "4c91efe5-4d56-4296-ada3-b277e22537e0",
+      "author": "Benedikt Schmitt",
+      "name": "filelock",
+      "version": "3.6.0",
+      "licenses": [{ "expression": "Unlicense" }],
+      "purl": "pkg:pypi/filelock@3.6.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "420c8eaf-e0dc-459d-91d9-6560282f2ffa",
+      "name": "lockfile",
+      "version": "0.12.2",
+      "purl": "pkg:pypi/lockfile@0.12.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ee140128-f337-44eb-be5b-bc276a8e727c",
+      "name": "types-toml",
+      "version": "0.10.6",
+      "licenses": [{ "expression": "Apache-2.0 license" }],
+      "purl": "pkg:pypi/types-toml@0.10.6",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "49270fe2-5688-4f0c-8827-154adab0cb0f",
+      "name": "h11",
+      "version": "0.13.0",
+      "purl": "pkg:pypi/h11@0.13.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "5cccef36-8e30-4d88-8ab0-47fb7ac0ecdd",
+      "name": "SecretStorage",
+      "version": "3.3.2",
+      "purl": "pkg:pypi/secretstorage@3.3.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "23a629b9-7e6e-487e-8400-641522ac4e86",
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/ptyprocess@0.7.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fb333edf-b95e-442d-9ae4-ddc9ce38e9cb",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "name": "typer",
+      "version": "0.4.1",
+      "purl": "pkg:pypi/typer@0.4.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "40cb1c82-13ad-4fa1-bc0f-01943c7621bf",
+      "author": "Armin Ronacher",
+      "name": "click",
+      "version": "8.1.3",
+      "licenses": [{ "expression": "BSD-3-Clause" }],
+      "purl": "pkg:pypi/click@8.1.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "9bd348bf-3972-458c-9c2b-08681dce43d9",
+      "author": "Python Packaging Authority",
+      "name": "setuptools",
+      "version": "62.1.0",
+      "purl": "pkg:pypi/setuptools@62.1.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "4a02501a-a020-45f3-b94f-991f03c894ba",
+      "name": "pexpect",
+      "version": "4.8.0",
+      "purl": "pkg:pypi/pexpect@4.8.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "c1aab035-db0c-4e89-b42d-7778f5a4ece9",
+      "name": "pylev",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/pylev@1.4.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "6810062a-5855-4f3f-ad7d-02b2ddf80631",
+      "author": "The pip developers",
+      "name": "pip",
+      "version": "22.0.4",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/pip@22.0.4",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eeb34c95-1bce-456a-bb54-9c6a760d4480",
+      "name": "pydantic",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/pydantic@1.9.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bc667707-f7aa-42e9-ab5c-63017c009200",
+      "name": "uvloop",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/uvloop@0.16.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "e9de0391-db0b-40fc-8dec-fbb81380454e",
+      "name": "CacheControl",
+      "version": "0.12.11",
+      "purl": "pkg:pypi/cachecontrol@0.12.11",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "aa104f64-4afa-4c38-a4b3-cf765308d04f",
+      "name": "websockets",
+      "version": "10.3",
+      "purl": "pkg:pypi/websockets@10.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "2116e5ce-7bc5-4b71-85ab-04d498f3b147",
+      "name": "pyparsing",
+      "version": "3.0.8",
+      "purl": "pkg:pypi/pyparsing@3.0.8",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "d62f9e29-3797-4924-acb6-84051cc0959e",
+      "name": "shellingham",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/shellingham@1.4.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "1d77f338-f507-471d-b3b7-41e84d78c97c",
+      "name": "uvicorn",
+      "version": "0.17.6",
+      "purl": "pkg:pypi/uvicorn@0.17.6",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "7cb937ac-90b4-44bd-aacb-5919e35d6e38",
+      "name": "fastapi",
+      "version": "0.75.2",
+      "purl": "pkg:pypi/fastapi@0.75.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "f37cb46a-6c11-484f-a7e1-5969bc9b3a97",
+      "author": "the purl authors",
+      "name": "packageurl-python",
+      "version": "0.9.9",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/packageurl-python@0.9.9",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "1cfc81c7-10d3-4c92-89c7-84796d2ca4cd",
+      "name": "keyring",
+      "version": "23.5.0",
+      "purl": "pkg:pypi/keyring@23.5.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "f04a3b35-327b-4a57-b76d-e58bc61d9e53",
+      "name": "asgiref",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/asgiref@3.5.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "16d49486-256a-4c26-b13d-2135a4d71aba",
+      "name": "sniffio",
+      "version": "1.2.0",
+      "purl": "pkg:pypi/sniffio@1.2.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "7c3c4c20-c99b-462a-946c-e3ea88dc1549",
+      "name": "msgpack",
+      "version": "1.0.3",
+      "purl": "pkg:pypi/msgpack@1.0.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "821104df-a3e8-403a-b077-3e6f73857269",
+      "name": "poetry",
+      "version": "1.1.13",
+      "purl": "pkg:pypi/poetry@1.1.13",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "871015d7-1fa2-4903-b4cf-b2f7959ca3f2",
+      "name": "anyio",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/anyio@3.5.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "51ce315d-614c-4f8d-8264-bbd02600b785",
+      "name": "html5lib",
+      "version": "1.1",
+      "purl": "pkg:pypi/html5lib@1.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "58d03efe-ae6b-4b58-8917-72289122f519",
+      "name": "typing-extensions",
+      "version": "4.2.0",
+      "purl": "pkg:pypi/typing-extensions@4.2.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "6eff0cfc-fc89-4b54-9206-f23cdd10f03d",
+      "name": "starlette",
+      "version": "0.17.1",
+      "purl": "pkg:pypi/starlette@0.17.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "5f9325ae-b012-44e6-84ad-cadc44e0f0ff",
+      "name": "platformdirs",
+      "version": "2.5.2",
+      "purl": "pkg:pypi/platformdirs@2.5.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "24ec9dc5-d623-4bf0-9cf1-f7253df71bc5",
+      "name": "tomlkit",
+      "version": "0.10.1",
+      "purl": "pkg:pypi/tomlkit@0.10.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "1594cac6-d040-4158-abda-06a07414a042",
+      "name": "jeepney",
+      "version": "0.8.0",
+      "purl": "pkg:pypi/jeepney@0.8.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "329153a6-a72f-413d-ba48-a1b78c4116aa",
+      "author": "Paul Horton",
+      "name": "cyclonedx-python-lib",
+      "version": "2.3.0",
+      "licenses": [{ "expression": "Apache-2.0" }],
+      "purl": "pkg:pypi/cyclonedx-python-lib@2.3.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "f6ae5e61-6132-4421-99cc-564b1d5de780",
+      "name": "poetry-core",
+      "version": "1.0.8",
+      "purl": "pkg:pypi/poetry-core@1.0.8",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "af26eb76-f8ec-4297-b370-3d346e17b37e",
+      "author": "Vinay Sajip",
+      "name": "distlib",
+      "version": "0.3.4",
+      "licenses": [{ "expression": "Python license" }],
+      "purl": "pkg:pypi/distlib@0.3.4",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "0901e328-4112-450c-b517-9ddc420060b0",
+      "name": "clikit",
+      "version": "0.6.2",
+      "purl": "pkg:pypi/clikit@0.6.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ffc242c8-07ad-4deb-ad12-ef2b49c5ef8f",
+      "name": "python-dotenv",
+      "version": "0.20.0",
+      "purl": "pkg:pypi/python-dotenv@0.20.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dc97f5c3-ca9f-49db-b7e8-f9d54a9cc604",
+      "name": "crashtest",
+      "version": "0.3.1",
+      "purl": "pkg:pypi/crashtest@0.3.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "76637994-0893-44b8-977b-2298d53fb080",
+      "name": "cleo",
+      "version": "0.8.1",
+      "purl": "pkg:pypi/cleo@0.8.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "c7ac430a-bd99-4f5b-9e67-9eb920758195",
+      "author": "Manabu Niseki",
+      "name": "py-sbom-components",
+      "version": "0.1.0",
+      "purl": "pkg:pypi/py-sbom-components@0.1.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "39c9358d-8211-420e-83f3-936fe400e3d2",
+      "name": "pkginfo",
+      "version": "1.8.2",
+      "purl": "pkg:pypi/pkginfo@1.8.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dd270ca3-cb6f-45da-8f99-355bc3e226df",
+      "author": "Jason R. Coombs",
+      "name": "importlib-metadata",
+      "version": "4.11.3",
+      "purl": "pkg:pypi/importlib-metadata@4.11.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "b6382fad-c499-4b3f-b87f-f66a30064c84",
+      "name": "webencodings",
+      "version": "0.5.1",
+      "purl": "pkg:pypi/webencodings@0.5.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "0fcbf421-4446-4340-b96d-b61ea3bd0849",
+      "name": "httptools",
+      "version": "0.4.0",
+      "purl": "pkg:pypi/httptools@0.4.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dfc2c996-1fe4-4268-98fd-5d14d1aa2c36",
+      "name": "cachy",
+      "version": "0.3.0",
+      "purl": "pkg:pypi/cachy@0.3.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "78fb1774-f48e-415e-ac35-c09f0f2be43d",
+      "author": "Bernat Gabor",
+      "name": "virtualenv",
+      "version": "20.14.1",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/virtualenv@20.14.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "4fc4e514-f526-4ec9-9ad3-28455c1e5634",
+      "author": "William Pearson",
+      "name": "toml",
+      "version": "0.10.2",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/toml@0.10.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "10c2e32e-2391-4492-8205-e31aa49561b0",
+      "name": "pastel",
+      "version": "0.2.1",
+      "purl": "pkg:pypi/pastel@0.2.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "049d12a2-f6fc-44ea-9dc6-050f38310112",
+      "name": "watchgod",
+      "version": "0.8.2",
+      "purl": "pkg:pypi/watchgod@0.8.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "b014eb56-afd8-46f5-92fe-9a5679b1fea5",
+      "name": "requests-toolbelt",
+      "version": "0.9.1",
+      "purl": "pkg:pypi/requests-toolbelt@0.9.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "db950758-e815-4bb2-9fde-0ac3b2514e1e",
+      "author": "Donald Stufft and individual contributors",
+      "name": "packaging",
+      "version": "20.9",
+      "licenses": [{ "expression": "BSD-2-Clause or Apache-2.0" }],
+      "purl": "pkg:pypi/packaging@20.9",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "a16a4716-cdf9-42f4-890d-0415558c093c",
+      "name": "75251",
+      "endpoints": ["tcp://127.0.0.1:8000"],
+      "properties": [
+        { "name": "exe", "value": "/usr/bin/python3.8" },
+        { "name": "username", "value": "vagrant" },
+        {
+          "name": "cmdline",
+          "value": "/usr/bin/python3 /home/vagrant/.local/bin/uvicorn test:app"
+        },
+        { "name": "cwd", "value": "/tmp" },
+        {
+          "name": "site_package",
+          "value": "/home/vagrant/.local/lib/python3.8/site-packages"
+        },
+        { "name": "pid", "value": "75251" }
+      ]
+    }
+  ],
+  "dependencies": [
+    { "ref": "b920e62e-f515-4519-9ba5-3b370c9aac35", "dependsOn": [] },
+    { "ref": "4c91efe5-4d56-4296-ada3-b277e22537e0", "dependsOn": [] },
+    { "ref": "420c8eaf-e0dc-459d-91d9-6560282f2ffa", "dependsOn": [] },
+    { "ref": "ee140128-f337-44eb-be5b-bc276a8e727c", "dependsOn": [] },
+    { "ref": "49270fe2-5688-4f0c-8827-154adab0cb0f", "dependsOn": [] },
+    { "ref": "5cccef36-8e30-4d88-8ab0-47fb7ac0ecdd", "dependsOn": [] },
+    { "ref": "23a629b9-7e6e-487e-8400-641522ac4e86", "dependsOn": [] },
+    { "ref": "fb333edf-b95e-442d-9ae4-ddc9ce38e9cb", "dependsOn": [] },
+    { "ref": "40cb1c82-13ad-4fa1-bc0f-01943c7621bf", "dependsOn": [] },
+    { "ref": "9bd348bf-3972-458c-9c2b-08681dce43d9", "dependsOn": [] },
+    { "ref": "4a02501a-a020-45f3-b94f-991f03c894ba", "dependsOn": [] },
+    { "ref": "c1aab035-db0c-4e89-b42d-7778f5a4ece9", "dependsOn": [] },
+    { "ref": "6810062a-5855-4f3f-ad7d-02b2ddf80631", "dependsOn": [] },
+    { "ref": "eeb34c95-1bce-456a-bb54-9c6a760d4480", "dependsOn": [] },
+    { "ref": "bc667707-f7aa-42e9-ab5c-63017c009200", "dependsOn": [] },
+    { "ref": "e9de0391-db0b-40fc-8dec-fbb81380454e", "dependsOn": [] },
+    { "ref": "aa104f64-4afa-4c38-a4b3-cf765308d04f", "dependsOn": [] },
+    { "ref": "2116e5ce-7bc5-4b71-85ab-04d498f3b147", "dependsOn": [] },
+    { "ref": "d62f9e29-3797-4924-acb6-84051cc0959e", "dependsOn": [] },
+    { "ref": "1d77f338-f507-471d-b3b7-41e84d78c97c", "dependsOn": [] },
+    { "ref": "7cb937ac-90b4-44bd-aacb-5919e35d6e38", "dependsOn": [] },
+    { "ref": "f37cb46a-6c11-484f-a7e1-5969bc9b3a97", "dependsOn": [] },
+    { "ref": "1cfc81c7-10d3-4c92-89c7-84796d2ca4cd", "dependsOn": [] },
+    { "ref": "f04a3b35-327b-4a57-b76d-e58bc61d9e53", "dependsOn": [] },
+    { "ref": "16d49486-256a-4c26-b13d-2135a4d71aba", "dependsOn": [] },
+    { "ref": "7c3c4c20-c99b-462a-946c-e3ea88dc1549", "dependsOn": [] },
+    { "ref": "821104df-a3e8-403a-b077-3e6f73857269", "dependsOn": [] },
+    { "ref": "871015d7-1fa2-4903-b4cf-b2f7959ca3f2", "dependsOn": [] },
+    { "ref": "51ce315d-614c-4f8d-8264-bbd02600b785", "dependsOn": [] },
+    { "ref": "58d03efe-ae6b-4b58-8917-72289122f519", "dependsOn": [] },
+    { "ref": "6eff0cfc-fc89-4b54-9206-f23cdd10f03d", "dependsOn": [] },
+    { "ref": "5f9325ae-b012-44e6-84ad-cadc44e0f0ff", "dependsOn": [] },
+    { "ref": "24ec9dc5-d623-4bf0-9cf1-f7253df71bc5", "dependsOn": [] },
+    { "ref": "1594cac6-d040-4158-abda-06a07414a042", "dependsOn": [] },
+    { "ref": "329153a6-a72f-413d-ba48-a1b78c4116aa", "dependsOn": [] },
+    { "ref": "f6ae5e61-6132-4421-99cc-564b1d5de780", "dependsOn": [] },
+    { "ref": "af26eb76-f8ec-4297-b370-3d346e17b37e", "dependsOn": [] },
+    { "ref": "0901e328-4112-450c-b517-9ddc420060b0", "dependsOn": [] },
+    { "ref": "ffc242c8-07ad-4deb-ad12-ef2b49c5ef8f", "dependsOn": [] },
+    { "ref": "dc97f5c3-ca9f-49db-b7e8-f9d54a9cc604", "dependsOn": [] },
+    { "ref": "76637994-0893-44b8-977b-2298d53fb080", "dependsOn": [] },
+    { "ref": "c7ac430a-bd99-4f5b-9e67-9eb920758195", "dependsOn": [] },
+    { "ref": "39c9358d-8211-420e-83f3-936fe400e3d2", "dependsOn": [] },
+    { "ref": "dd270ca3-cb6f-45da-8f99-355bc3e226df", "dependsOn": [] },
+    { "ref": "b6382fad-c499-4b3f-b87f-f66a30064c84", "dependsOn": [] },
+    { "ref": "0fcbf421-4446-4340-b96d-b61ea3bd0849", "dependsOn": [] },
+    { "ref": "dfc2c996-1fe4-4268-98fd-5d14d1aa2c36", "dependsOn": [] },
+    { "ref": "78fb1774-f48e-415e-ac35-c09f0f2be43d", "dependsOn": [] },
+    { "ref": "4fc4e514-f526-4ec9-9ad3-28455c1e5634", "dependsOn": [] },
+    { "ref": "10c2e32e-2391-4492-8205-e31aa49561b0", "dependsOn": [] },
+    { "ref": "049d12a2-f6fc-44ea-9dc6-050f38310112", "dependsOn": [] },
+    { "ref": "b014eb56-afd8-46f5-92fe-9a5679b1fea5", "dependsOn": [] },
+    { "ref": "db950758-e815-4bb2-9fde-0ac3b2514e1e", "dependsOn": [] }
+  ]
+}
