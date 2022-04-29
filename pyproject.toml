@@ -1,8 +1,11 @@
 [tool.poetry]
-name = "pycomponents"
-version = "0.1.0"
+name = "py-sbom-components"
+version = "0.1.1"
 description = "An experimental tool to generate CycloneDX BOM from running Python processes"
 authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
+packages = [
+    { include = "pycomponents" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
