@@ -27,8 +27,5 @@ def is_python(path: str) -> bool:
     try:
         output = python("--version")
         return str(output).startswith("Python ")
-    except Exception as e:
-        from loguru import logger
-
-        logger.exception(e)
+    except Exception:
         return False

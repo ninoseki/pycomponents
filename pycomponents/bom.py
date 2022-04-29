@@ -1,35 +1,36 @@
 from typing import List
 
 import psutil
-from cyclonedx.model import Tool
+from cyclonedx.model import ExternalReference, Tool
 from cyclonedx.model.bom import Bom, Property
 from cyclonedx.model.component import Component
 
 from .components import ComponentsFactory
+from .service import ServiceFactory
 from .site_packages import get_site_packages
 from .utils import get_version
 
 
-def get_tool() -> Tool:
-    version = get_version()
-    return Tool(vendor="pycomponents", name="pycomponents-bom", version=version)
-
-
-def get_process_properties(process: psutil.Process) -> List[Property]:
-    cmdline = " ".join(process.cmdline())
-
-    properties: List[Property] = [
-        Property(name="pid", value=str(process.pid)),
-        Property(name="exe", value=process.exe()),
-        Property(name="cmdline", value=cmdline),
+def get_external_references() -> List[ExternalReference]:
+    return [
+        ExternalReference(
+            reference_type="vcs", url="https://github.com/ninoseki/pycomponents"
+        ),
+        ExternalReference(
+            reference_type="distribution", url="https://pypi.org/project/pycomponents/"
+        ),
     ]
 
-    try:
-        properties.append(Property(name="cwd", value=process.cwd()))
-    except Exception:
-        pass
 
-    return properties
+def get_tool() -> Tool:
+    version = get_version()
+    external_references = get_external_references()
+    return Tool(
+        vendor="ninoseki",
+        name="pycomponents",
+        version=version,
+        external_references=external_references,
+    )
 
 
 class BOMFactory:
@@ -46,15 +47,14 @@ class BOMFactory:
     def from_process(process: psutil.Process) -> Bom:
         site_packages = get_site_packages(process)
         components = ComponentsFactory.from_site_packages(site_packages)
+
         bom = BOMFactory.from_components(components)
-
-        properties = get_process_properties(process)
-        for prop in properties:
-            bom.metadata.properties.add(prop)
-
         for site_package in site_packages:
             bom.metadata.properties.add(
                 Property(name="site_package", value=site_package)
             )
+
+        service = ServiceFactory.from_process(process)
+        bom.services.add(service)
 
         return bom

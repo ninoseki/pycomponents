@@ -1,14 +1,13 @@
-from typing import List
+from importlib.metadata import PackageNotFoundError, metadata
+from typing import List, Set
 
 import pkg_resources
 from cyclonedx.model import LicenseChoice
 from cyclonedx.model.component import Component, Property
-from importlib_metadata import PackageMetadata as _MetadataReturn
-from importlib_metadata import PackageNotFoundError, metadata
 from packageurl import PackageURL
 
 
-def _get_metadata_for_package(package_name: str) -> _MetadataReturn:
+def _get_metadata_for_package(package_name: str):
     return metadata(package_name)
 
 
@@ -58,7 +57,7 @@ class ComponentsFactory:
         return components
 
     @staticmethod
-    def from_site_packages(site_packages: set[str]) -> List[Component]:
+    def from_site_packages(site_packages: Set[str]) -> List[Component]:
         components: List[Component] = []
         for site_package in site_packages:
             components.extend(ComponentsFactory.from_site_package(site_package))
