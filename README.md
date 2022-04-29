@@ -40,7 +40,7 @@ Options:
 
 ## Example
 
-See [example](https://github.com/ninoseki/pycomponents/example/README.md).
+See [example](https://github.com/ninoseki/pycomponents/tree/main/example).
 
 ## What is the difference from `cyclonedx-bom`?
 
