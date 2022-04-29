@@ -49,12 +49,11 @@ class BOMFactory:
         components = ComponentsFactory.from_site_packages(site_packages)
 
         bom = BOMFactory.from_components(components)
-        for site_package in site_packages:
-            bom.metadata.properties.add(
-                Property(name="site_package", value=site_package)
-            )
 
         service = ServiceFactory.from_process(process)
+        for site_package in site_packages:
+            service.properties.add(Property(name="site_package", value=site_package))
+
         bom.services.add(service)
 
         return bom
