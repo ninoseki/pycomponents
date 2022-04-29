@@ -5,6 +5,7 @@ from cyclonedx.model import ExternalReference, Tool
 from cyclonedx.model.bom import Bom, Property
 from cyclonedx.model.component import Component
 
+from . import constants
 from .components import ComponentsFactory
 from .service import ServiceFactory
 from .site_packages import get_site_packages
@@ -13,11 +14,9 @@ from .utils import get_version
 
 def get_external_references() -> List[ExternalReference]:
     return [
+        ExternalReference(reference_type="vcs", url=constants.vcs_url),
         ExternalReference(
-            reference_type="vcs", url="https://github.com/ninoseki/pycomponents"
-        ),
-        ExternalReference(
-            reference_type="distribution", url="https://pypi.org/project/pycomponents/"
+            reference_type="distribution", url=constants.distribution_url
         ),
     ]
 
@@ -26,8 +25,8 @@ def get_tool() -> Tool:
     version = get_version()
     external_references = get_external_references()
     return Tool(
-        vendor="ninoseki",
-        name="pycomponents",
+        vendor=constants.vendor,
+        name=constants.name,
         version=version,
         external_references=external_references,
     )
