@@ -1,7 +1,7 @@
 from typing import List
 
 import psutil
-from cyclonedx.model import Tool
+from cyclonedx.model import ExternalReference, Tool
 from cyclonedx.model.bom import Bom, Property
 from cyclonedx.model.component import Component
 
@@ -11,12 +11,25 @@ from .site_packages import get_site_packages
 from .utils import get_version
 
 
+def get_external_references() -> List[ExternalReference]:
+    return [
+        ExternalReference(
+            reference_type="vcs", url="https://github.com/ninoseki/pycomponents"
+        ),
+        ExternalReference(
+            reference_type="distribution", url="https://pypi.org/project/pycomponents/"
+        ),
+    ]
+
+
 def get_tool() -> Tool:
     version = get_version()
+    external_references = get_external_references()
     return Tool(
         vendor="ninoseki",
-        name="pycomponents - https://github.com/ninoseki/pycomponents",
+        name="pycomponents",
         version=version,
+        external_references=external_references,
     )
 
 
