@@ -1,5 +1,8 @@
 # pycomponents
 
+[![PyPI version](https://badge.fury.io/py/py-sbom-components.svg)](https://badge.fury.io/py/py-sbom-components)
+[![Python CI](https://github.com/ninoseki/pycomponents/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/pycomponents/actions/workflows/test.yml)
+
 An experimental tool to generate CycloneDX SBOM from running Python processes.
 
 ## Requirements
