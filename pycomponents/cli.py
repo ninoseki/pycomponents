@@ -32,9 +32,14 @@ def validate_output_dir(output_dir: str) -> bool:
 
 @app.command()
 def generate_bom(
-    output_format: _CLI_OUTPUT_FORMAT = "json",
-    output_dir: str = "./",
-    allow_overwrite: bool = True,
+    output_format: _CLI_OUTPUT_FORMAT = typer.Argument(
+        "json", help="The output format for your SBOM (default: json)"
+    ),
+    output_dir: str = typer.Argument("./", help="The output directory"),
+    allow_overwrite: bool = typer.Argument(
+        True,
+        help="Whether to allow overwriting if the same file exists. (default: True)",
+    ),
 ):
     validate_output_dir(output_dir)
 
