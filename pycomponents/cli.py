@@ -1,4 +1,5 @@
 import enum
+import os
 
 import typer
 from cyclonedx.output import OutputFormat
@@ -22,11 +23,21 @@ _output_formats = {
 }
 
 
+def validate_output_dir(output_dir: str) -> bool:
+    if not os.path.isdir(output_dir):
+        raise ValueError(f"{output_dir} is not a directory")
+
+    return True
+
+
 @app.command()
 def generate_bom(
     output_format: _CLI_OUTPUT_FORMAT = "json",
+    output_dir: str = "./",
     allow_overwrite: bool = True,
 ):
+    validate_output_dir(output_dir)
+
     processes = get_py_processes()
     for process in processes:
         bom = BOMFactory.from_process(process)
@@ -34,7 +45,9 @@ def generate_bom(
             bom, output_format=_output_formats[output_format]
         )
 
-        filename = f"pycomponents-{process.pid}.{output_format.value}"
+        filename = os.path.join(
+            output_dir, f"pycomponents-{process.pid}.{output_format.value}"
+        )
         output.output_to_file(filename, allow_overwrite=allow_overwrite)
 
 
