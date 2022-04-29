@@ -13,8 +13,16 @@ An experimental tool to generate CycloneDX SBOM from running Python processes.
 ## Installation
 
 ```bash
-pip install pycomponents
+pip install py-sbom-components
 ```
+
+Note: Initially I planned to publish this tool as `pycomponents`. But it is prohibited by the following restriction.
+
+```
+HTTP Error 400: The name 'pycomponents' is too similar to an existing project. See https://pypi.org/help/#project-name for more information.
+```
+
+Thus, I use this a little bit lengthy name.
 
 ## Usage
 
