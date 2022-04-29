@@ -32,10 +32,7 @@ def get_endpoints(process: psutil.Process, *, kind="tcp"):
     try:
         connections = get_listen_connections(process, kind=kind)
         return convert_to_endpoints(connections, kind=kind)
-    except Exception as e:
-        from loguru import logger
-
-        logger.exception(e)
+    except Exception:
         return []
 
 
