@@ -34,12 +34,12 @@ def validate_output_dir(output_dir: str) -> bool:
 @app.command()
 def generate_bom(
     output_format: _CLI_OUTPUT_FORMAT = typer.Option(
-        "json", help="The output format for your SBOM (default: json)"
+        "json", help="The output format for your SBOM"
     ),
     output_dir: str = typer.Option("./", help="The output directory"),
     allow_overwrite: bool = typer.Option(
         True,
-        help="Whether to allow overwriting if the same file exists. (default: True)",
+        help="Whether to allow overwriting if the same file exists",
     ),
     exclude_pids: Optional[List[int]] = typer.Option(
         None, help="A list of pids to exclude"
