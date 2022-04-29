@@ -1,5 +1,6 @@
 import enum
 import os
+from typing import List, Optional
 
 import typer
 from cyclonedx.output import OutputFormat
@@ -40,11 +41,21 @@ def generate_bom(
         True,
         help="Whether to allow overwriting if the same file exists. (default: True)",
     ),
+    exclude_pids: Optional[List[int]] = typer.Option(
+        None, help="A list of pids to exclude"
+    ),
 ):
     validate_output_dir(output_dir)
 
+    # initialize exclude_pids as an empty list if None is given
+    exclude_pids = list(exclude_pids or [])
+
     processes = get_py_processes()
     for process in processes:
+        if process.pid in exclude_pids:
+            # do nothing if it exists in exclude_pids
+            continue
+
         bom = BOMFactory.from_process(process)
         output = OutputFactory.from_bom(
             bom, output_format=_output_formats[output_format]
