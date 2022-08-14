@@ -6,6 +6,8 @@ from cyclonedx.model import LicenseChoice
 from cyclonedx.model.component import Component, Property
 from packageurl import PackageURL
 
+from .vulnerability import VulnerabilityFactory
+
 
 def _get_metadata_for_package(package_name: str):
     return metadata(package_name)
@@ -43,6 +45,10 @@ class ComponentFactory:
                         )
         except PackageNotFoundError:
             pass
+
+        vulnerabilities = VulnerabilityFactory.from_component(c)
+        for vulnerability in vulnerabilities:
+            c.add_vulnerability(vulnerability)
 
         return c
 

@@ -131,3 +131,6 @@ dmypy.json
 # BOM
 /pycomponents-*.json
 /pycomponents-*.xml
+
+# Vagrant
+vagrant/.vagrant/

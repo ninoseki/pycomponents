@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: '{"version": "100.0.0", "package": {"name": "jinja2", "ecosystem": "PyPI"}}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '74'
+      content-type:
+      - application/json
+      host:
+      - api.osv.dev
+      user-agent:
+      - python-httpx/0.23.0
+    method: POST
+    uri: https://api.osv.dev/v1/query
+  response:
+    content: '{}'
+    headers:
+      Content-Length:
+      - '2'
+      Date:
+      - Sun, 14 Aug 2022 08:05:16 GMT
+      Server:
+      - Google Frontend
+      X-Cloud-Trace-Context:
+      - a28abb58a30c67d904eed7bfa92661ba
+      alt-svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      content-type:
+      - application/json
+      grpc-accept-encoding:
+      - identity, deflate, gzip
+      grpc-status:
+      - '0'
+      x-envoy-decorator-operation:
+      - ingress QueryAffected
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

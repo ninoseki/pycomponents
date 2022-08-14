@@ -1,7 +1,7 @@
 from typing import List
 
 import psutil
-from cyclonedx.model import ExternalReference, Tool
+from cyclonedx.model import ExternalReference, ExternalReferenceType, Tool, XsUri
 from cyclonedx.model.bom import Bom, Property
 from cyclonedx.model.component import Component
 
@@ -14,9 +14,12 @@ from .utils import get_version
 
 def get_external_references() -> List[ExternalReference]:
     return [
-        ExternalReference(reference_type="vcs", url=constants.vcs_url),
         ExternalReference(
-            reference_type="distribution", url=constants.distribution_url
+            reference_type=ExternalReferenceType.VCS, url=XsUri(constants.vcs_url)
+        ),
+        ExternalReference(
+            reference_type=ExternalReferenceType.DISTRIBUTION,
+            url=XsUri(constants.distribution_url),
         ),
     ]
 
