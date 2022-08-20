@@ -59,7 +59,7 @@ See [example](https://github.com/ninoseki/pycomponents/tree/main/example).
 `pycomponents` uses a different approach to generate SBOM.
 
 - List up Python processes
-- Inspect site packages used by a Python process
-- Generate SBOM based on site packages
+- Generate components based on site packages used by Python processes
+- Generate vulnerabilities in components by using [OSV](https://osv.dev/) and [cve-search](https://www.cve-search.org/)
 
 Thus `pycomponents` generates half-and-half mixed runtime & static SBOM.

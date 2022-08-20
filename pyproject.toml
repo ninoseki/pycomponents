@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-sbom-components"
-version = "0.1.2"
+version = "0.2.0"
 description = "An experimental tool to generate CycloneDX BOM from running Python processes"
 authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
 packages = [
