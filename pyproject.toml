@@ -13,7 +13,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 arrow = "^1.2.2"
+cachetools = "^5.2.0"
 cyclonedx-python-lib = "^2.7.1"
+environs = "^9.5.0"
 httpx = "^0.23.0"
 loguru = "^0.6.0"
 psutil = "^5.9.1"
@@ -36,6 +38,7 @@ pytest-randomly = "^3.12.0"
 pytest-sugar = "^0.9.5"
 pyupgrade = "^2.37.3"
 vcrpy = "^4.2.0"
+types-cachetools = "^5.2.1"
 
 [tool.poetry.scripts]
 pycomponents = "pycomponents.cli:app"

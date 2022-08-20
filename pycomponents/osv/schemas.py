@@ -46,6 +46,14 @@ class Vuln(BaseModel):
     affected: List[AffectedItem] = Field(default_factory=list)
     schema_version: str
 
+    @property
+    def cve_id(self) -> Optional[str]:
+        for alias in self.aliases:
+            if alias.startswith("CVE-"):
+                return alias
+
+        return None
+
 
 class Response(BaseModel):
     vulns: List[Vuln] = Field(default_factory=list)

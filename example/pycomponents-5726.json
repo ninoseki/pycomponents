@@ -1,0 +1,386 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:0bae7240-0158-4c5a-b0ed-b8ce27af93bc",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-08-20T01:00:32.365918+00:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-python-lib",
+        "version": "2.7.1",
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
+            "type": "build-system"
+          },
+          {
+            "url": "https://pypi.org/project/cyclonedx-python-lib/",
+            "type": "distribution"
+          },
+          {
+            "url": "https://cyclonedx.github.io/cyclonedx-python-lib/",
+            "type": "documentation"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues",
+            "type": "issue-tracker"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE",
+            "type": "license"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md",
+            "type": "release-notes"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib",
+            "type": "vcs"
+          },
+          { "url": "https://cyclonedx.org", "type": "website" }
+        ]
+      },
+      {
+        "vendor": "ninoseki",
+        "name": "pycomponents",
+        "version": "0.1.2",
+        "externalReferences": [
+          {
+            "url": "https://pypi.org/project/py-sbom-components/",
+            "type": "distribution"
+          },
+          { "url": "https://github.com/ninoseki/pycomponents", "type": "vcs" }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4",
+      "author": "Kirill Simonov",
+      "name": "PyYAML",
+      "version": "5.1.1",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/pyyaml@5.1.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "d178be31-133c-4010-a2a7-a444343d9483",
+      "author": "Alex Gr\u00f6nholm",
+      "name": "anyio",
+      "version": "3.6.1",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/anyio@3.6.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "b94eee60-14cb-40ee-8df3-e100b0ddb290",
+      "name": "asgiref",
+      "version": "3.5.2",
+      "purl": "pkg:pypi/asgiref@3.5.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "7009401c-f618-4ac9-a10a-3dcc5bcac993",
+      "author": "Armin Ronacher",
+      "name": "click",
+      "version": "8.1.3",
+      "licenses": [{ "expression": "BSD-3-Clause" }],
+      "purl": "pkg:pypi/click@8.1.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "61d3e81a-366e-495a-b401-a12fcd55fadb",
+      "name": "fastapi",
+      "version": "0.75.2",
+      "purl": "pkg:pypi/fastapi@0.75.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "7375f1fc-7ae7-4747-beae-870136ff6958",
+      "author": "Nathaniel J. Smith",
+      "name": "h11",
+      "version": "0.13.0",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/h11@0.13.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "12a03c4b-2d7f-42a6-a036-73eff02539d4",
+      "author": "Kim Davies",
+      "name": "idna",
+      "version": "3.3",
+      "licenses": [{ "expression": "BSD-3-Clause" }],
+      "purl": "pkg:pypi/idna@3.3",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "d86cdb43-8d8b-4e2d-b85f-bc7d8d047760",
+      "author": "The pip developers",
+      "name": "pip",
+      "version": "20.0.2",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/pip@20.0.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "23dfd092-10c5-47f0-a14f-5be8144b4e48",
+      "name": "pkg-resources",
+      "version": "0.0.0",
+      "purl": "pkg:pypi/pkg-resources@0.0.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "44366ff1-9cbb-49e1-bfff-eea367ffad94",
+      "author": "Samuel Colvin",
+      "name": "pydantic",
+      "version": "1.9.2",
+      "licenses": [{ "expression": "MIT" }],
+      "purl": "pkg:pypi/pydantic@1.9.2",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "90b599d4-6f92-4797-a5cb-2fc7e803c115",
+      "author": "Python Packaging Authority",
+      "name": "setuptools",
+      "version": "44.0.0",
+      "purl": "pkg:pypi/setuptools@44.0.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "0ad549e8-a065-4ea7-a63a-295ff6cbb395",
+      "author": "Nathaniel J. Smith",
+      "name": "sniffio",
+      "version": "1.2.0",
+      "licenses": [{ "expression": "MIT -or- Apache License 2.0" }],
+      "purl": "pkg:pypi/sniffio@1.2.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "6ad73733-ae26-4fd4-a5e7-67e4aad39bb7",
+      "name": "starlette",
+      "version": "0.17.1",
+      "purl": "pkg:pypi/starlette@0.17.1",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "3e388916-31cf-41e2-a14b-5ffbe7a7d4c2",
+      "name": "typing-extensions",
+      "version": "4.3.0",
+      "purl": "pkg:pypi/typing-extensions@4.3.0",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "613be883-88da-44da-95e0-79dca26212d2",
+      "name": "uvicorn",
+      "version": "0.17.6",
+      "purl": "pkg:pypi/uvicorn@0.17.6",
+      "properties": [
+        {
+          "name": "location",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "5f6e5300-1ed7-4a97-b6df-16ccf828196e",
+      "name": "5726",
+      "endpoints": ["tcp://127.0.0.1:8000"],
+      "properties": [
+        {
+          "name": "cmdline",
+          "value": "/pycomponents/example/foo/bin/python3.8 /pycomponents/example/foo/bin/uvicorn main:app"
+        },
+        { "name": "cwd", "value": "/pycomponents/example" },
+        { "name": "exe", "value": "/usr/bin/python3.8" },
+        { "name": "pid", "value": "5726" },
+        {
+          "name": "site_package",
+          "value": "/pycomponents/example/foo/lib/python3.8/site-packages"
+        },
+        { "name": "username", "value": "vagrant" }
+      ]
+    }
+  ],
+  "dependencies": [
+    { "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4", "dependsOn": [] },
+    { "ref": "d178be31-133c-4010-a2a7-a444343d9483", "dependsOn": [] },
+    { "ref": "b94eee60-14cb-40ee-8df3-e100b0ddb290", "dependsOn": [] },
+    { "ref": "7009401c-f618-4ac9-a10a-3dcc5bcac993", "dependsOn": [] },
+    { "ref": "61d3e81a-366e-495a-b401-a12fcd55fadb", "dependsOn": [] },
+    { "ref": "7375f1fc-7ae7-4747-beae-870136ff6958", "dependsOn": [] },
+    { "ref": "12a03c4b-2d7f-42a6-a036-73eff02539d4", "dependsOn": [] },
+    { "ref": "d86cdb43-8d8b-4e2d-b85f-bc7d8d047760", "dependsOn": [] },
+    { "ref": "23dfd092-10c5-47f0-a14f-5be8144b4e48", "dependsOn": [] },
+    { "ref": "44366ff1-9cbb-49e1-bfff-eea367ffad94", "dependsOn": [] },
+    { "ref": "90b599d4-6f92-4797-a5cb-2fc7e803c115", "dependsOn": [] },
+    { "ref": "0ad549e8-a065-4ea7-a63a-295ff6cbb395", "dependsOn": [] },
+    { "ref": "6ad73733-ae26-4fd4-a5e7-67e4aad39bb7", "dependsOn": [] },
+    { "ref": "3e388916-31cf-41e2-a14b-5ffbe7a7d4c2", "dependsOn": [] },
+    { "ref": "613be883-88da-44da-95e0-79dca26212d2", "dependsOn": [] }
+  ],
+  "vulnerabilities": [
+    {
+      "bom-ref": "7640452d-e43b-4424-aa3a-9072315b8617",
+      "id": "GHSA-3pqx-4fqf-j49f",
+      "ratings": [{ "score": 7.5, "severity": "high" }],
+      "detail": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
+      "published": "2021-04-20T16:40:42+00:00",
+      "updated": "2022-08-15T08:19:13.790465+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "07ef8f4c-eab0-4dcb-bdd6-ee10d33fd688",
+      "id": "GHSA-6757-jp84-gxfx",
+      "ratings": [{ "score": 10.0, "severity": "high" }],
+      "detail": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.",
+      "published": "2021-04-20T16:14:24+00:00",
+      "updated": "2022-08-16T03:32:33.801841+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "30317b17-5596-434a-aa1b-ca69d92c66f7",
+      "id": "GHSA-8q59-q68h-6hv4",
+      "ratings": [{ "score": 10.0, "severity": "high" }],
+      "detail": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+      "published": "2021-03-25T21:26:26+00:00",
+      "updated": "2022-08-16T03:32:17.220397+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "5b4c776e-10bc-4d32-83d7-4644dde6f6f5",
+      "id": "PYSEC-2020-176",
+      "ratings": [{ "score": 7.5, "severity": "high" }],
+      "detail": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
+      "published": "2020-02-19T04:15:00+00:00",
+      "updated": "2020-03-01T00:15:00+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "a86378c8-aaaf-4d81-8092-cc1542031767",
+      "id": "PYSEC-2020-96",
+      "ratings": [{ "score": 10.0, "severity": "high" }],
+      "detail": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.",
+      "published": "2020-03-24T15:15:00+00:00",
+      "updated": "2021-03-26T02:44:00+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "17d7ab49-89ea-4190-be66-91f9b2837208",
+      "id": "PYSEC-2021-142",
+      "ratings": [{ "score": 10.0, "severity": "high" }],
+      "detail": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+      "published": "2021-02-09T21:15:00+00:00",
+      "updated": "2021-08-27T03:22:18.913334+00:00",
+      "affects": [{ "ref": "265315a4-54ca-4c2c-8e08-c003f6fe3fd4" }]
+    },
+    {
+      "bom-ref": "1059e09b-cb71-4a62-9162-050cfc286ad0",
+      "id": "GHSA-5xp3-jfq3-5q8x",
+      "ratings": [{ "score": 3.5, "severity": "low" }],
+      "detail": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.",
+      "published": "2021-11-15T17:45:01+00:00",
+      "updated": "2022-08-16T03:31:22.199193+00:00",
+      "affects": [{ "ref": "d86cdb43-8d8b-4e2d-b85f-bc7d8d047760" }]
+    },
+    {
+      "bom-ref": "47a0311f-2489-4443-8000-e1b6a61114c0",
+      "id": "PYSEC-2021-437",
+      "ratings": [{ "score": 3.5, "severity": "low" }],
+      "detail": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity. This is fixed in python-pip version 21.1.",
+      "published": "2021-11-10T18:15:00+00:00",
+      "updated": "2021-11-29T23:42:09.374676+00:00",
+      "affects": [{ "ref": "d86cdb43-8d8b-4e2d-b85f-bc7d8d047760" }]
+    }
+  ]
+}

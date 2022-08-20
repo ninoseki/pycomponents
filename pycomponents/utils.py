@@ -1,6 +1,8 @@
 import os
 from functools import lru_cache
+from typing import Any, Dict, Optional
 
+import httpx
 import sh
 
 from . import __version__
@@ -29,3 +31,23 @@ def is_python(path: str) -> bool:
         return str(output).startswith("Python ")
     except Exception:
         return False
+
+
+def make_http_request(
+    *,
+    url: str,
+    method: str,
+    timeout: int,
+    params: Optional[Dict[Any, Any]] = None,
+    json: Optional[Dict[Any, Any]] = None,
+    headers: Optional[Dict[Any, Any]] = None,
+) -> httpx.Response:
+    with httpx.Client(timeout=timeout) as client:
+        req = httpx.Request(
+            method=method, url=url, params=params, json=json, headers=headers
+        )
+        res = client.send(req)
+
+    res.raise_for_status()
+
+    return res
