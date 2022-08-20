@@ -4,6 +4,7 @@ import psutil
 from cyclonedx.model import ExternalReference, ExternalReferenceType, Tool, XsUri
 from cyclonedx.model.bom import Bom, Property
 from cyclonedx.model.component import Component
+from loguru import logger
 
 from . import constants
 from .components import ComponentsFactory
@@ -47,8 +48,14 @@ class BOMFactory:
 
     @staticmethod
     def from_process(process: psutil.Process) -> Bom:
+        logger.info(f"Inspecting PID:{process.pid}...")
+
         site_packages = get_site_packages(process)
         components = ComponentsFactory.from_site_packages(site_packages)
+
+        vulnerability_count = 0
+        for component in components:
+            vulnerability_count += len(component.get_vulnerabilities())
 
         bom = BOMFactory.from_components(components)
 
@@ -57,5 +64,9 @@ class BOMFactory:
             service.properties.add(Property(name="site_package", value=site_package))
 
         bom.services.add(service)
+
+        logger.info(
+            f"PID:{process.pid} has {len(components)} components and {vulnerability_count} vulnerabilities"
+        )
 
         return bom
