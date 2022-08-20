@@ -1,37 +1,28 @@
 interactions:
 - request:
-    body: '{"version": -1, "package": {"name": -1, "ecosystem": "PyPI"}}'
+    body: '{"version": -1, "package": {"name": "dummy", "ecosystem": "PyPI"}}'
     headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
       content-length:
-      - '61'
+      - '66'
       content-type:
       - application/json
       host:
       - api.osv.dev
-      user-agent:
-      - python-httpx/0.23.0
     method: POST
     uri: https://api.osv.dev/v1/query
   response:
-    content: '{"code":400,"message":"query.package.name: invalid value -1 for type
-      TYPE_STRING"}
+    content: '{"code":400,"message":"query.version: invalid value -1 for type TYPE_STRING"}
 
       '
     headers:
       Content-Length:
-      - '83'
+      - '78'
       Date:
-      - Sun, 14 Aug 2022 22:29:12 GMT
+      - Sat, 20 Aug 2022 01:13:13 GMT
       Server:
       - Google Frontend
       X-Cloud-Trace-Context:
-      - 73d7c0c1a484ffb08f3d5b06f9bbc4df
+      - 529ac81ce32cc4bbbe81c414a646a01c
       content-type:
       - application/json
       x-envoy-decorator-operation:

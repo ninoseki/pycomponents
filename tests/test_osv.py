@@ -24,6 +24,6 @@ def test_query_error():
     osv = OSV()
 
     with pytest.raises(OSVQueryException) as e:
-        osv.query(name=-1, version=-1)
+        osv.query(name="dummy", version=-1)
 
         assert "400 Bad Request" in str(e)

@@ -4,3 +4,7 @@ class PyComponentsException(BaseException):
 
 class OSVQueryException(PyComponentsException):
     pass
+
+
+class CVESearchQueryException(PyComponentsException):
+    pass
