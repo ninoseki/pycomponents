@@ -36,6 +36,11 @@ class AffectedItem(BaseModel):
     database_specific: DatabaseSpecific
 
 
+class Severity(BaseModel):
+    type: str
+    score: str
+
+
 class Vuln(BaseModel):
     id: str
     details: str
@@ -45,6 +50,7 @@ class Vuln(BaseModel):
     references: List[Reference] = Field(default_factory=list)
     affected: List[AffectedItem] = Field(default_factory=list)
     schema_version: str
+    severity: List[Severity] = Field(default_factory=list)
 
     @property
     def cve_id(self) -> Optional[str]:
