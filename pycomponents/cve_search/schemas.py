@@ -11,10 +11,12 @@ class Response(BaseModel):
         if self.cvss is None:
             return None
 
+        # since it is impossible to determine whether the score based on CVSS v2 or v3,
+        # use CVSS v2's scale
         if self.cvss >= 7.0:
-            return "high"
+            return "High"
 
         if self.cvss >= 4.0:
-            return "medium"
+            return "Medium"
 
-        return "low"
+        return "Low"

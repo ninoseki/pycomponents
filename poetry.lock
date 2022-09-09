@@ -178,6 +178,14 @@ requests = ">=1.0.0"
 yaml = ["PyYAML (>=3.10)"]
 
 [[package]]
+name = "cvss"
+version = "2.5"
+description = "CVSS2/3 library with interactive calculator for Python 2 and Python 3"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "cyclonedx-python-lib"
 version = "2.7.1"
 description = "A library for producing CycloneDX SBOM (Software Bill of Materials) files."
@@ -880,7 +888,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2296e5fb8778f74f79cc512cb541beeb7a37482bd56b80b4a4f34fa27aaeee64"
+content-hash = "72c7b7e22d1223ddafa78fe260cff6f0f5122cf4fd52f7b2f5157756fd13d0fa"
 
 [metadata.files]
 anyio = [
@@ -949,6 +957,10 @@ coverage = []
 coveralls = [
     {file = "coveralls-3.3.1-py2.py3-none-any.whl", hash = "sha256:f42015f31d386b351d4226389b387ae173207058832fbf5c8ec4b40e27b16026"},
     {file = "coveralls-3.3.1.tar.gz", hash = "sha256:b32a8bb5d2df585207c119d6c01567b81fba690c9c10a753bfe27a335bfc43ea"},
+]
+cvss = [
+    {file = "cvss-2.5-py2.py3-none-any.whl", hash = "sha256:c1a48f8a6024642b986c51182a79d7aa2c05d1d75c57ad3496b9ab0451a8e89a"},
+    {file = "cvss-2.5.tar.gz", hash = "sha256:63f648cffb2647498cf28646a7004fe0f48872c9ba7d8653bebd710409f8ba0e"},
 ]
 cyclonedx-python-lib = []
 distlib = [
